@@ -30,7 +30,7 @@ void print_list(ListNode *list)
 
 int main()
 {
-	std::vector<int> nums {1};
+	std::vector<int> nums;
 	ListNode *list = generate_list(nums);
 	print_list(list);
 
