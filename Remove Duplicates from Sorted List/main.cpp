@@ -30,8 +30,11 @@ void print_list(ListNode *list)
 
 int main()
 {
-	std::vector<int> nums {1, 1, 2};
+	std::vector<int> nums {1};
 	ListNode *list = generate_list(nums);
 	print_list(list);
+
 	Solution s;
+	ListNode *res = s.deleteDuplicates(list);
+	print_list(res);
 }

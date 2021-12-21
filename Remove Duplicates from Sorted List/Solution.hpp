@@ -15,6 +15,21 @@ struct ListNode {
 class Solution {
 public:
     ListNode* deleteDuplicates(ListNode* head) {
-		return 0;
+		if (!head->next)
+			return head;
+		ListNode *result = new ListNode(head->val);
+		ListNode *tmp_res = result;
+		while (head->next)
+		{
+			ListNode *next = head->next;
+			if (next->val != head->val)
+			{
+				ListNode *node = new ListNode(next->val);
+				tmp_res->next = node;
+				tmp_res = tmp_res->next;
+			}
+			head = head->next;
+		}
+		return result;
     }
 };
