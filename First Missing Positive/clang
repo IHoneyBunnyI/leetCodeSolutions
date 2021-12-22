@@ -1,0 +1,4 @@
+#!/bin/zsh
+
+clang++ -fsanitize=address -g -std=c++11 main.cpp
+./a.out
