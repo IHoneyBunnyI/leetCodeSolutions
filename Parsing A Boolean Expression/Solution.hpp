@@ -9,7 +9,6 @@ using namespace std;
 #define AND 3
 
 class Solution {
-
 	private:
 	bool check_str(std::string str)
 	{
