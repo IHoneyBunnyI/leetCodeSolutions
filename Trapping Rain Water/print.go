@@ -2,6 +2,9 @@ package main
 
 import "fmt"
 
+//height = [0,1,0,2,1,0,1,3,2,1,2,1] => 6
+//height = [4,2,0,3,2,5] => 9
+
 type Slice []int
 
 func (s Slice) max() int {
@@ -34,4 +37,6 @@ func (s Slice) Print() {
 		}
 		fmt.Println()
 	}
+	//fmt.Println("012345678911111111112")
+	//fmt.Println("          01234567890\n")
 }
